@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayoshi Banerjee – Interactive CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 2.5rem 1rem 1rem;
+      background-color: transparent;
+      text-align: center;
+    }
+
+    .typing-container {
+      max-width: 100%;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+    }
+
+    .typing {
+      font-size: 2.2rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      border-right: 2px solid #ff66b2;
+      animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+      color: #ff66b2;
+      max-width: 100%;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      color: #f5f5f5;
+    }
+
+    .section {
+      padding: 1.5rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #ff66b2;
+    }
+
+    .tab {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 1px solid #444;
+      transition: background-color 0.3s;
+    }
+
+    .tab:hover {
+      background-color: #222;
+    }
+
+    .tab-content {
+      padding: 1rem;
+      display: none;
+      background-color: #121212;
+      border: 1px solid #333;
+      margin-top: 1rem;
+      border-radius: 8px;
+      color: #e0e0e0;
+    }
+
+    .tab.open .tab-content {
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ff66b2;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      .typing {
+        font-size: 1.6rem;
+      }
+
+      .subtitle {
+        font-size: 0.95rem;
+      }
+
+      header {
+        padding: 2rem 0.5rem 1rem;
+      }
+
+      .section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="typing-container">
+      <div class="typing" id="typing-text"></div>
+    </div>
+    <p class="subtitle">Media Student | Storyteller | Creator</p>
+  </header>
+
+  <section class="section">
+    <h2>About Me</h2>
+    <p>
+      I am Ayoshi Banerjee, a first-year student pursuing a B.Sc. in Media Science. With a deep interest in visual storytelling, performance, and communication, I am passionate about using media as a powerful tool to convey emotions, raise awareness, and spark conversations. My background in acting, design, and filmmaking allows me to approach projects with both creativity and purpose, and I am eager to explore diverse narratives that connect with audiences.
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="tab" onclick="toggleTab(this)">
+      <h2>Skillsets</h2>
+      <div class="tab-content">
+        <p>
+          I am a versatile voice artist with a strong command over narration, emotion, and modulation. My experience includes voice work for both horror and fiction storytelling, where I use my voice to evoke atmosphere and bring characters to life.
+        </p>
+        <p>
+          With extensive experience in video editing, I am proficient in editing software such as Adobe Premiere Pro and CapCut. I have developed a keen eye for pacing, transitions, and visual storytelling.
+        </p>
+        <p>
+          As a photo editor, I am skilled in Adobe Photoshop and Lightroom to enhance images and adjust colors to create polished visuals.
+        </p>
+        <p>
+          In acting, I portray emotionally complex characters, both on stage and on screen, often rooted in awareness-based narratives.
+        </p>
+        <p>
+          With a talent for storytelling and scriptwriting, I create engaging fictional and real-life narratives for digital platforms.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="tab" onclick="toggleTab(this)">
+      <h2>Creative Works</h2>
+      <div class="tab-content">
+        <p>
+          I am the creator of the YouTube channel 
+          <a href="https://www.youtube.com/@OLIKKAHINI" target="_blank">Olik Kahini</a>, 
+          where I produce engaging fictional and real-life horror stories.
+        </p>
+        <p>
+          Each episode features expressive narration and thoughtful storytelling, reflecting my passion for media and performance.
+        </p>
+        <p>
+          New, exciting content is in development, offering more compelling narratives and artistic expression.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="tab" onclick="toggleTab(this)">
+      <h2>Hobbies & Passion</h2>
+      <div class="tab-content">
+        <h4 style="color:#ff66b2;">Hobbies</h4>
+        <p>I enjoy singing, dancing, and acting—all of which allow me to express creatively and emotionally.</p>
+
+        <h4 style="color:#ff66b2;">Passion</h4>
+        <p>I'm pursuing journalism to share impactful stories and continue refining my skills in voice artistry and acting.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:ayoshibanerjee07@gmail.com">ayoshibanerjee07@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+918240284747">+91 82402 84747</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Ayoshi Banerjee | Made with ❤️ and JavaScript
+  </footer>
+
+  <script>
+    function toggleTab(tab) {
+      const content = tab.querySelector(".tab-content");
+      tab.classList.toggle("open");
+      content.style.display = tab.classList.contains("open") ? "block" : "none";
+    }
+
+    const text = "Hi, I'm Ayoshi Banerjee!";
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        document.getElementById("typing-text").textContent += text.charAt(i);
+        i++;
+        setTimeout(type, 100);
+      }
+    }
+    type();
+  </script>
+
+</body>
+</html>
